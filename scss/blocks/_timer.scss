@@ -1,0 +1,188 @@
+.timer-section {
+  background: linear-gradient(180deg, $light 0%, $white 100%);
+}
+
+.timer {
+  text-align: center;
+  background: $white;
+  border-radius: 24px;
+  padding: 48px 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  margin-bottom: 60px;
+  border: 2px solid rgba(16, 185, 129, 0.1);
+  @media screen and (max-width: 767px) {
+    padding: 32px 20px;
+  }
+}
+
+.timer__badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #fbb036 0%, #f59e0b 100%);
+  color: $white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  animation: pulse-badge 2s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.timer__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: $weight-dark;
+  margin-bottom: 32px;
+   @media screen and (min-width: 1024px) {
+        font-size: 36px;  
+    }
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+.timer__countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.timer__block {
+  background: linear-gradient(135deg, $weight-dark 0%, #1e293b 100%);
+  border-radius: 16px;
+  padding: 24px 32px;
+  min-width: 120px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.3);
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width: 767px) {
+    min-width: 100px;
+    padding: 20px 24px;
+  }
+}
+
+.timer__block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, $primary, transparent);
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.timer__number {
+  display: block;
+  font-size: 56px;
+  font-weight: 800;
+  color: $white;
+  line-height: 1;
+  margin-bottom: 8px;
+  font-variant-numeric: tabular-nums;
+  @media screen and (max-width: 767px) {
+    font-size: 44px;
+  }
+}
+
+.timer__label {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timer__separator {
+  font-size: 48px;
+  font-weight: 700;
+  color: $dark;
+  animation: blink 1s step-end infinite;
+  @media screen and (max-width: 767px) {
+    font-size: 36px;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.timer__text {
+  font-size: 18px;
+  color: $gray;
+  margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.timer__text strong {
+  color: $primary;
+  font-weight: 700;
+}
+
+.timer__cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: $white;
+  padding: 16px 48px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+  @media screen and (max-width: 767px) {
+    padding: 14px 36px;
+    font-size: 16px;
+  }
+}
+
+.timer__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(16, 185, 129, 0.4);
+}
+
+.timer__cta.last-chance {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 8px 24px rgba(239, 68, 68, 0.3);
+  animation: pulse-cta 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-cta {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}

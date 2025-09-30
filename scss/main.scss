@@ -1,0 +1,21 @@
+//base
+
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+
+//mixins 
+
+@import './base/mixin';
+
+//blocks
+@import './blocks/hero';
+@import './blocks/cta';
+@import './blocks/timer';
+@import './blocks/benefits';
+@import './blocks/testimonials-section';
+@import './blocks/faq';
+@import './blocks/about-section';
+@import './blocks/form-section';
+
+

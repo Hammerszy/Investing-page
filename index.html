@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PrimeInvest - розумні інвестиції для вашого майбутнього. Почніть заробляти вже сьогодні!">
+    <title>PrimeInvest - Інвестиції в ваше майбутнє</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <span class="hero__badge"> Надійні інвестиції з 2020 року</span>
+            <h1 class="hero__title">Інвестуйте в своє майбутнє з PrimeInvest</h1>
+            <p class="hero__subtitle">Розумні рішення для вашого капіталу. Отримайте до 25% річних з мінімальними ризиками.</p>
+            <button class="hero__cta" onclick="scrollToForm()">Почати зараз</button>
+        </div>
+    </section>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta__container">
+            <span class="sticky-cta__text">Почніть заробляти вже сьогодні!</span>
+            <button class="sticky-cta__btn" onclick="scrollToForm()">Почати зараз</button>
+        </div>
+    </div>
+
+    <!-- Timer Section -->
+    <section class="section timer-section" id="timer-section">
+        <div class="container">
+            <div class="timer">
+                <div class="timer__badge"> Обмежена пропозиція</div>
+                <h2 class="timer__title">Спеціальна пропозиція закінчується через:</h2>
+                <div class="timer__countdown" id="countdown">
+                    <div class="timer__block">
+                        <span class="timer__number" id="minutes">15</span>
+                        <span class="timer__label">хвилин</span>
+                    </div>
+                    <div class="timer__separator">:</div>
+                    <div class="timer__block">
+                        <span class="timer__number" id="seconds">00</span>
+                        <span class="timer__label">секунд</span>
+                    </div>
+                </div>
+                <p class="timer__text">Не втратьте шанс отримати <strong>бонус 500₴</strong> на перший депозит!</p>
+                <button class="timer__cta" id="timerCta" onclick="scrollToForm()">Почати зараз</button>
+            </div>
+            
+            <div class="benefits">
+                <div class="benefit">
+                   
+                    <img class="benefit__icon" src="./img/svg/benefits/market-fluctuation.svg" alt="Investing">
+                   
+                    <h3 class="benefit__title">До 25% річних</h3>
+                    <p class="benefit__text">Стабільний дохід з мінімальними ризиками</p>
+                </div>
+                <div class="benefit">
+                    <img class="benefit__icon" src="./img/svg/benefits/verified.svg" alt="Investing">
+                    <h3 class="benefit__title">Гарантія безпеки</h3>
+                    <p class="benefit__text">Ваші інвестиції під захистом</p>
+                </div>
+                <div class="benefit">
+                    <img class="benefit__icon" src="./img/svg/benefits/thunder.svg" alt="Investing">
+                    <h3 class="benefit__title">Швидкий старт</h3>
+                    <p class="benefit__text">Почніть інвестувати за 5 хвилин</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section__title">Що кажуть наші клієнти</h2>
+            <p class="section__subtitle">Понад 10,000 задоволених інвесторів довіряють нам</p>
+            
+            <div class="testimonials">
+                <div class="swiper testimonialsSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial">
+                            <div class="testimonial__rating">
+                                <img src="./img/svg/five-star-rating-icon.svg" alt="Five star">
+                            </div>
+                            <p class="testimonial__text">"За 6 місяців роботи з PrimeInvest мій капітал виріс на 18%. Професійна команда, прозора звітність та регулярні виплати. Рекомендую всім!"</p>
+                            <div class="testimonial__author">
+                                <div class="testimonial__avatar">ОМ</div>
+                                <div>
+                                    <div class="testimonial__name">Олександр Мельник</div>
+                                    <div class="testimonial__position">Підприємець, Київ</div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial">
+                                <span class="testimonial__rating">
+                                    <img src="./img/svg/five-star-rating-icon.svg" alt="Five star">
+                                </span>
+                                <p class="testimonial__text">"Шукала надійний спосіб примножити заощадження. PrimeInvest перевершив очікування - стабільний дохід, зручний інтерфейс та відмінна підтримка!"</p>
+                                <div class="testimonial__author">
+                                    <div class="testimonial__avatar">МК</div>
+                                    <div>
+                                        <div class="testimonial__name">Марія Коваленко</div>
+                                        <div class="testimonial__position">Лікар, Львів</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial">
+                                <span class="testimonial__rating">
+                                    <img src="./img/svg/five-star-rating-icon.svg" alt="Five star">
+                                </span>
+                                <p class="testimonial__text">"Інвестую через PrimeInvest вже рік. Отримав прибуток 22% за цей період. Чудова альтернатива банківським депозитам!"</p>
+                                <div class="testimonial__author">
+                                    <div class="testimonial__avatar">ІП</div>
+                                    <div>
+                                        <div class="testimonial__name">Ігор Петренко</div>
+                                        <div class="testimonial__position">IT-спеціаліст, Одеса</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial">
+                                <div class="testimonial__rating">
+                                    <img src="./img/svg/five-star-rating-icon.svg" alt="Five star">
+                                </div>
+                                <p class="testimonial__text">"Почала з невеликої суми, щоб перевірити. Результати вразили - тепер інвестую регулярно. Команда завжди на зв'язку і готова допомогти!"</p>
+                                <div class="testimonial__author">
+                                    <div class="testimonial__avatar">АС</div>
+                                    <div>
+                                        <div class="testimonial__name">Анна Сидоренко</div>
+                                        <div class="testimonial__position">Дизайнер, Харків</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 5 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial">
+                                <div class="testimonial__rating">
+                                    <img src="./img/svg/five-star-rating-icon.svg" alt="Five star">
+                                </div>
+                                <p class="testimonial__text">"Ідеальний баланс між ризиком та прибутком. За 9 місяців отримав 20% прибутку. PrimeInvest - мій головний інструмент для інвестицій!"</p>
+                                <div class="testimonial__author">
+                                    <div class="testimonial__avatar">ДК</div>
+                                    <div>
+                                        <div class="testimonial__name">Дмитро Кравченко</div>
+                                        <div class="testimonial__position">Менеджер, Дніпро</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            
+            <div class="testimonials__dots" id="dots"></div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section" id="faq">
+        <div class="container container--sm">
+            <h2 class="section__title">Часті запитання</h2>
+            <p class="section__subtitle">Все, що вам потрібно знати про інвестиції з PrimeInvest</p>
+            
+            <div class="faq">
+                <div class="faq__item">
+                    <button class="faq__question" onclick="toggleFaq(0)">
+                        <span>Як почати інвестувати з PrimeInvest?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Почати дуже просто! Заповніть форму реєстрації на нашому сайті, підтвердіть свою електронну пошту, поповніть рахунок зручним способом та оберіть інвестиційний план. Весь процес займає не більше 5-10 хвилин. Наша команда підтримки завжди готова допомогти на кожному етапі.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" onclick="toggleFaq(1)">
+                        <span>Яка мінімальна сума для інвестування?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Мінімальна сума для початку інвестування становить лише 1,000 грн. Це дозволяє кожному розпочати свій шлях до фінансової незалежності без великих початкових вкладень. Ви можете поступово збільшувати свої інвестиції в міру зростання довіри та отримання прибутку.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" onclick="toggleFaq(2)">
+                        <span>Як швидко я можу вивести свої кошти?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Ви можете подати заявку на виведення коштів у будь-який момент через особистий кабінет. Стандартний термін обробки заявки становить 1-3 робочі дні. Кошти можуть бути виведені на банківську карту, банківський рахунок або електронний гаманець на ваш вибір.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" onclick="toggleFaq(3)">
+                        <span>Які гарантії безпеки моїх інвестицій?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Безпека ваших коштів - наш головний пріоритет. Ми використовуємо банківське шифрування SSL, зберігаємо кошти в надійних фінансових установах, регулярно проходимо незалежні аудити та маємо диверсифікований інвестиційний портфель для мінімізації ризиків. Також діє страхування депозитів до 100,000 грн.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" onclick="toggleFaq(4)">
+                        <span>Чи потрібно мені мати досвід в інвестуванні?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Абсолютно ні! PrimeInvest створений як для досвідчених інвесторів, так і для початківців. Наша платформа має інтуїтивний інтерфейс, а команда професійних менеджерів керує вашими інвестиціями. Ми також надаємо навчальні матеріали, вебінари та персональні консультації для всіх клієнтів.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" onclick="toggleFaq(5)">
+                        <span>Який рівень прибутковості я можу очікувати?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Середня річна прибутковість наших інвестиційних портфелів становить 18-25%. Однак важливо розуміти, що інвестиції завжди несуть певні ризики, і прибутковість може варіюватися залежно від ринкових умов та обраної стратегії. Ми прагнемо забезпечити максимальну прибутковість при оптимальному рівні ризику.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" onclick="toggleFaq(6)">
+                        <span>Чи є додаткові комісії або приховані платежі?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Ми дотримуємося повної прозорості у фінансових питаннях. Комісія за управління становить всього 2% від прибутку (не від суми інвестицій). Поповнення рахунку - безкоштовне. Комісія за виведення коштів - 1% (мінімум 50 грн). Ніяких прихованих платежів немає. Всі умови чітко прописані в договорі.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" onclick="toggleFaq(7)">
+                        <span>Як я можу відстежувати свої інвестиції?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>У вашому особистому кабінеті ви маєте доступ до повної статистики в режимі реального часу: поточна вартість портфеля, прибуток за різні періоди, історія всіх операцій, детальна аналітика та графіки. Також ви отримуєте щомісячні звіти на email та можете налаштувати push-повідомлення в мобільному додатку.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="about">
+                <div class="about__image">
+                    <img src="./img/PrimeInvest.jpg" alt="">
+                    <div class="about__image-placeholder">
+                        
+                    </div>
+                </div>
+                <div class="about__content">
+                    <h2 class="section__title about__title">Про PrimeInvest</h2>
+                    <p class="about__text">
+                        З 2020 року ми допомагаємо тисячам клієнтів досягати фінансових цілей через розумні інвестиції. PrimeInvest — це команда професіоналів з багаторічним досвідом у фінансовій галузі, які об'єдналися, щоб зробити інвестування доступним для кожного.
+                    </p>
+                    <p class="about__text">
+                        Наша місія — створити надійний інструмент для примноження капіталу, який поєднує високу прибутковість з мінімальними ризиками. Ми використовуємо перевірені стратегії диверсифікації та постійний моніторинг ринків, щоб забезпечити стабільний дохід нашим клієнтам.
+                    </p>
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <div class="about__stat-number">10,000+</div>
+                            <div class="about__stat-label">Активних клієнтів</div>
+                        </div>
+                        <div class="about__stat">
+                            <div class="about__stat-number">500М+</div>
+                            <div class="about__stat-label">Грн під управлінням</div>
+                        </div>
+                        <div class="about__stat">
+                            <div class="about__stat-number">22%</div>
+                            <div class="about__stat-label">Середня прибутковість</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Form Section -->
+    <section class="section form-section" id="form">
+        <div class="section__container">
+            <h2 class="section__title">Почніть інвестувати сьогодні</h2>
+            <p class="section__subtitle">Заповніть форму та отримайте бонус 500₴ на перший депозит</p>
+            
+            <div class="form-wrapper">
+                <div class="form-progress">
+                    <div class="form-progress__bar">
+                        <div class="form-progress__fill" id="progressFill"></div>
+                    </div>
+                    <div class="form-progress__steps">
+                        <div class="form-progress__step active" id="step1Indicator">
+                            <div class="form-progress__step-number">1</div>
+                            <div class="form-progress__step-label">Особисті дані</div>
+                        </div>
+                        <div class="form-progress__step" id="step2Indicator">
+                            <div class="form-progress__step-number">2</div>
+                            <div class="form-progress__step-label">Контакти</div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="lead-form" id="leadForm">
+                    <!-- Step 1 -->
+                    <div class="form-step active" id="formStep1">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Ваше ім'я *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                class="form-input" 
+                                placeholder="Введіть ваше ім'я"
+                                autocomplete="name"
+                                required
+                            >
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                class="form-input" 
+                                placeholder="example@email.com"
+                                autocomplete="email"
+                                required
+                            >
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <button type="button" class="form-btn" onclick="goToStep2()">
+                            Далі
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="form-step" id="formStep2">
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Телефон *</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                class="form-input" 
+                                placeholder="+380 (XX) XXX-XX-XX"
+                                autocomplete="tel"
+
+                                required
+                            >
+                            <span class="form-error" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" id="consent" required>
+                                <span class="form-checkbox__mark"></span>
+                                <span class="form-checkbox__text">
+                                    Я погоджуюсь з <a href="#" class="form-link">умовами обробки персональних даних</a> та <a href="#" class="form-link">політикою конфіденційності</a>
+                                </span>
+                            </label>
+                            <span class="form-error" id="consentError"></span>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="form-btn form-btn--secondary" onclick="goToStep1()">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Назад
+                            </button>
+                            <button type="submit" class="form-btn">
+                                Відправити заявку
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal__overlay" onclick="closeModal()"></div>
+        <div class="modal__content">
+            <button class="modal__close" onclick="closeModal()" aria-label="Закрити">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="modal__icon">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="32" r="32" fill="#10B981" opacity="0.1"/>
+                    <circle cx="32" cy="32" r="24" fill="#10B981" opacity="0.2"/>
+                    <path d="M20 32L28 40L44 24" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3 class="modal__title">Заявку прийнято!</h3>
+            <p class="modal__text">Дякуємо за реєстрацію! Наш менеджер зв'яжеться з вами найближчим часом для підтвердження та активації вашого бонусу 500₴.</p>
+            <button class="modal__btn" onclick="closeModal()">Чудово!</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+</html>
+
+
+    
+    
